@@ -1,9 +1,13 @@
 package main.cgvsu.com.model;
 
+import javafx.geometry.Point2D;
+
 import java.util.List;
 
 public interface PointManager<T> {
     void addPoint(T point);
+    void insertPoint(int index, T point);
+    void updatePoint(int index, T newPoint);
     void removePoint(T point);
     void removePoint(int index);
     void clearPoints();
@@ -11,5 +15,6 @@ public interface PointManager<T> {
     int getPointCount();
     boolean hasEnoughPointsForCurve();
     T findNearestPoint(T target, double radius);
+    int findNearestPointIndex(T target, double radius);
     boolean containsPoint(T point);
 }

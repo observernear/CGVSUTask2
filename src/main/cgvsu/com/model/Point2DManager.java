@@ -17,6 +17,20 @@ public class Point2DManager implements PointManager<Point2D> {
     }
 
     @Override
+    public void insertPoint(int index, Point2D point) {
+        if (index >= 0 && index <= points.size()) {
+            points.add(index, point);
+        }
+    }
+
+    @Override
+    public void updatePoint(int index, Point2D newPoint) {
+        if (index >= 0 && index < points.size()) {
+            points.set(index, newPoint);
+        }
+    }
+
+    @Override
     public void removePoint(Point2D point) {
         points.remove(point);
     }
@@ -61,6 +75,21 @@ public class Point2DManager implements PointManager<Point2D> {
             }
         }
         return nearest;
+    }
+
+    @Override
+    public int findNearestPointIndex(Point2D target, double radius) {
+        int nearestIndex = -1;
+        double minDistance = Double.MAX_VALUE;
+
+        for (int i = 0; i < points.size(); i++) {
+            double distance = points.get(i).distance(target);
+            if (distance <= radius && distance < minDistance) {
+                minDistance = distance;
+                nearestIndex = i;
+            }
+        }
+        return nearestIndex;
     }
 
     @Override
