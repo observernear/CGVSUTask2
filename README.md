@@ -127,7 +127,7 @@
 2. **Скачивание JavaFX**
     ```bash
     wget https://download2.gluonhq.com/openjfx/25/openjfx-25_linux-x64_bin-sdk.zip
-    unzip openjfx-21_linux-x64_bin-sdk.zip
+    unzip openjfx-25_linux-x64_bin-sdk.zip
 
 ### Запуск в IDE (IntelliJ IDEA)
 1. **Откройте проект в IDEA**
