@@ -10,9 +10,9 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("mainwindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("resources/mainwindow.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-        stage.setTitle("Interpolation View App");
+        stage.setTitle("Curve Interpolation Visualizer");
         stage.setScene(scene);
         stage.show();
     }
