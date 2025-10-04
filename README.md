@@ -122,7 +122,7 @@
 
 1. **Клонирование репозитория**
     ```bash
-    git clone https://github.com/your-username/curve-interpolation-visualizer.git
+    git clone https://github.com/observernear/curve-interpolation-visualizer.git
     cd curve-interpolation-visualizer
 2. **Скачивание JavaFX**
     ```bash
@@ -135,7 +135,7 @@
 3. **Добавьте JavaFX в Project Structure → Libraries**
 4. **В VM Options укажите:**
     ```
-   --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml
+   --module-path /path/to/javafx-sdk-25/lib --add-modules javafx.controls,javafx.fxml
 
 ## 🎮 Использование
 
