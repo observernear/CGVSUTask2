@@ -5,10 +5,10 @@ import javafx.geometry.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BezierCurve2D implements CurveCalculator<Point2D> {
+public class BezierStrategy implements InterpolationStrategy<Point2D> {
 
     @Override
-    public List<Point2D> calculateCurve(List<Point2D> controlPoints, int segments) {
+    public List<Point2D> calculate(List<Point2D> controlPoints, int segments) {
         if (controlPoints == null || controlPoints.size() < 2) {
             throw new IllegalArgumentException("Need at least 2 control points");
         }
