@@ -4,7 +4,7 @@ import javafx.geometry.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Point2DManager implements PointManager<Point2D> {
+public class Point2DManager implements PointManagerImpl<Point2D> {
     private final List<Point2D> points;
 
     public Point2DManager() {

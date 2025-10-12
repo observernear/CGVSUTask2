@@ -1,10 +1,8 @@
 package main.cgvsu.com.model;
 
-import javafx.geometry.Point2D;
-
 import java.util.List;
 
-public interface PointManager<T> {
+public interface PointManagerImpl<T> {
     void addPoint(T point);
     void insertPoint(int index, T point);
     void updatePoint(int index, T newPoint);

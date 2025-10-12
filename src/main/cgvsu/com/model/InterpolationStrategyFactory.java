@@ -10,7 +10,7 @@ public class InterpolationStrategyFactory {
         SPLINE
     }
 
-    public static InterpolationStrategy<Point2D> createStrategy(StrategyType type) {
+    public static InterpolationStrategyImpl<Point2D> createStrategy(StrategyType type) {
         return switch (type) {
             case BEZIER -> new BezierStrategy();
             case LAGRANGE -> new LagrangeStrategy();

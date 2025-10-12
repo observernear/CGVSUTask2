@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.cgvsu.com.controller.InterpolationStrategyController">
-    <Canvas fx:id="canvas" height="600" width="800" AnchorPane.topAnchor="30.0" />
+    <Canvas fx:id="canvas" height="800" width="1200" AnchorPane.topAnchor="30.0" />
 
     <VBox layoutY="423.0" spacing="10" style="-fx-background-color: #A9A9A9; -fx-padding: 10;">
         <RadioButton fx:id="bezierRadio" selected="true" text="Кривая Безье" userData="BEZIER" />

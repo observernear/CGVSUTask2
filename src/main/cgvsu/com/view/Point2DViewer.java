@@ -6,7 +6,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 import java.util.List;
 
-public class Point2DViewer implements InterpolationViewer<Point2D> {
+public class Point2DViewer implements InterpolationViewerImpl<Point2D> {
     private static final int POINT_RADIUS = 5;
     private static final int DRAGGED_POINT_RADIUS = 7;
     private static final Color POINT_COLOR = Color.BLUE;

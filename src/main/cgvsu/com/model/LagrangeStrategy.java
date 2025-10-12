@@ -4,7 +4,7 @@ import javafx.geometry.Point2D;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LagrangeStrategy implements InterpolationStrategy<Point2D> {
+public class LagrangeStrategy implements InterpolationStrategyImpl<Point2D> {
 
     @Override
     public List<Point2D> calculate(List<Point2D> controlPoints, int segments) {

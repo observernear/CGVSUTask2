@@ -11,7 +11,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import main.cgvsu.com.model.*;
-import main.cgvsu.com.view.InterpolationViewer;
+import main.cgvsu.com.view.InterpolationViewerImpl;
 import main.cgvsu.com.view.Point2DViewer;
 
 import java.util.List;
@@ -41,9 +41,9 @@ public class InterpolationStrategyController {
 
     private ToggleGroup InterpolationTypeGroup;
 
-    private final PointManager<Point2D> pointManager = new Point2DManager();
-    private InterpolationStrategy<Point2D> currentStrategy;
-    private final InterpolationViewer<Point2D> interpolationViewer = new Point2DViewer();
+    private final PointManagerImpl<Point2D> pointManager = new Point2DManager();
+    private InterpolationStrategyImpl<Point2D> currentStrategy;
+    private final InterpolationViewerImpl<Point2D> interpolationViewer = new Point2DViewer();
 
     private int segments = 100;
     private boolean isDragging = false;

@@ -3,7 +3,7 @@ package main.cgvsu.com.model;
 import javafx.geometry.Point2D;
 import java.util.*;
 
-public class CubicSplineStrategy implements InterpolationStrategy<Point2D> {
+public class CubicSplineStrategy implements InterpolationStrategyImpl<Point2D> {
 
     @Override
     public List<Point2D> calculate(List<Point2D> controlPoints, int segments) {
